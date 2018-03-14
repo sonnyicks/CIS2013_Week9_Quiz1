@@ -18,7 +18,6 @@ int main(){
 		exit(1);
 	}
 	while (data >> next){
-		data >> next;
 		count++;
 		if (next=='A'){
 			A++;
