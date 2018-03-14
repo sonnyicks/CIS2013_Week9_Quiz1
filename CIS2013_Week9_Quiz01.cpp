@@ -34,8 +34,13 @@ int main(){
 			b++;
 		}
 	}
-	cout << next << nextint;
 	data.close();
+	data.open("data.dat");
+	while (data >> nextint){
+		data >> nextint;
+		count++;
+		cout << nextint;
+	}
 	cout << "The file contains " << A << "A's, " << F << "F's, " << a << "a's and "
 	<< b << "b's.  The total number of characters in the document is " << count;
 	return 0;
